@@ -6,4 +6,4 @@ Grupo para la practica anual de la materia Electronica Microcontrolada
                          Otero, Carlos Nahuel
                          Godoy, Gustavo Alberto
                          Mulka, Sharon Micaela
-                  
+                         Ruiz, Gloria Beatriz
