@@ -7,3 +7,4 @@ Grupo para la practica anual de la materia Electronica Microcontrolada
                          Godoy, Gustavo Alberto
                          Mulka, Sharon Micaela
                          Ruiz, Gloria Beatriz
+                         Morales, Rebeca Ruth V.
