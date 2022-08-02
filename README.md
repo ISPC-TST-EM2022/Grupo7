@@ -9,7 +9,8 @@ Grupo para la practica anual de la materia Electronica Microcontrolada
 - [Morales, Rebeca Ruth V.](https://github.com/rebmorales)  
 
   
-  ## Organización del repositorio.
+  ## Organización del repositorio.  
+  - El repositorio esta organizado con carpetas contenedoras para cada período, actividad e ítem.
 
 ``` 
 Grupo7
