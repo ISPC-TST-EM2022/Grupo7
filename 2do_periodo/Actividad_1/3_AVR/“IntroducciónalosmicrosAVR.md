@@ -1,0 +1,1 @@
+3) AVR: En la misma pagina, ir a la carpeta: “Introducción a los micros AVR” y realizar las 4primeras capacitaciones.
