@@ -14,8 +14,8 @@ Grupo para la practica anual de la materia Electronica Microcontrolada
 
 ``` 
 Grupo7
-    │   README.md
-    │   teleco.png
+    ├───README.md
+    ├───teleco.png
     │
     ├───1er_periodo
     │       ActividadN2_Grupo7.pdf
@@ -23,13 +23,15 @@ Grupo7
     │
     └───2do_periodo
         └───Actividad_1
-            │   README.md
-            │
-            ├───2_AVR
-            │   ├───a
-            │   └───b
-            ├───3_AVR
-            └───4_PIC
-                ├───a
-                └───b          
+        |   │   README.md
+        |   │
+        |   ├───2_AVR
+        |   │   ├───a
+        |   │   └───b
+        |   ├───3_AVR
+        |   └───4_PIC
+        |       ├───a
+        |       └───b          
+        └───Ejercitacion_evaluativa
+
 ```
