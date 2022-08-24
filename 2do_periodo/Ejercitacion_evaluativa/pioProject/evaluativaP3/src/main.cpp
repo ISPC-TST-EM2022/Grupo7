@@ -217,3 +217,19 @@ void ejercicio5() {
     delay(100);
   }
 };
+
+// 6. Realizar una función bool cerradura({tipo} clave); que retorne true cuando la clave
+// numérica sea 2147483648. Elija el “tipo” de dato apropiadamente. Implemente el
+// circuito que active un rele; Utilice el terminal virtual.
+
+bool ejercicio6() {
+    while (Serial.available() == 0) {};
+    String clave_ingresada = Serial.readString();
+    if (clave_ingresada == pass) {
+        return true;
+    } else {
+        return false;
+    };
+    
+
+};
