@@ -137,3 +137,32 @@ void ejercicio2() {
   Serial.println("Muchas gracias.");
   Serial.println();
 };
+
+// 3. Realizar la suma de n números reales ingresados por terminal y calcular su media.
+
+void ejercicio3() {
+  Serial.println();
+  Serial.print("Por favor, ingrese la cantidad de numeros a ingresar: ");
+  while (Serial.available() == 0){};
+  int cant = Serial.parseInt();
+  float lista_numeros[cant];
+  Serial.println(cant);
+  Serial.flush();
+  for (int i = 0; i < cant; i++) {
+    Serial.print("Ingrese un numero: ");
+    while (Serial.available() == 0) {};
+    lista_numeros[i] = Serial.parseInt();
+    Serial.println(lista_numeros[i]);
+    Serial.flush();
+  };
+  float suma = 0;
+  for (int i = 0; i < cant; i++) {
+    suma += lista_numeros[i];
+  };
+  float media = suma/cant;
+  Serial.println();
+  Serial.print("La media de los valores ingresados es: ");
+  Serial.println(media);
+  
+};
+
