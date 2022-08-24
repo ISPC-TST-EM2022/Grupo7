@@ -6,7 +6,7 @@ Grupo para la practica anual de la materia Electronica Microcontrolada
 - [Gustavo Alberto Godoy.](https://github.com/chulkx) 
 - [Mulka, Sharon Micaela.](https://github.com/sharonmulka)
 - [Ruiz, Gloria Beatriz.](https://github.com/ruizgb)
-- [Morales, Rebeca Ruth V.](https://github.com/rebmorales)  
+ 
 
   
   ## Organización del repositorio.  
