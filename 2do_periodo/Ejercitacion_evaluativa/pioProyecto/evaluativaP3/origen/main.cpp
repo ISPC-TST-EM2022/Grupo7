@@ -96,6 +96,22 @@ void loop() {
   };
 };
 
+int ejercicio1() {
+  int a, b, res;
+  Serial.print("Ingrese el primer numero: ");
+  while (Serial.available() == 0){};
+  a = Serial.parseInt();
+  Serial.println(a);
+
+  Serial.print("Ingrese el segundo numero: ");
+  while (Serial.available() == 0){};
+  b = Serial.parseInt();
+  Serial.println(b);
+  
+  res = a+b;
+  return res;
+};
+
 
 // 2. Preguntar Nombre, Apellido, Direccion y Celular en mensajes diferentes.
 // Completar las respuestas.
