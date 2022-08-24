@@ -97,3 +97,27 @@ void loop() {
 };
 
 
+// 2. Preguntar Nombre, Apellido, Direccion y Celular en mensajes diferentes.
+// Completar las respuestas.
+
+void ejercicio2() {
+  Serial.println("Por favor, a continuacion ingrese los datos solicitados: ");
+  Serial.print("Nombre: ");
+  while (Serial.available() == 0) {};
+  String nombre = Serial.readString();
+  Serial.println(nombre);
+  Serial.print("Apellido: ");
+  while (Serial.available() == 0) {};
+  String apellido = Serial.readString();
+  Serial.println(apellido);
+  Serial.print("Direccion: ");
+  while (Serial.available() == 0) {};
+  String direccion = Serial.readString();
+  Serial.println(direccion);
+  Serial.print("Celular: ");
+  while (Serial.available() == 0) {};
+  String celular = Serial.readString();
+  Serial.println(celular);
+  Serial.println("Muchas gracias.");
+  Serial.println();
+};
