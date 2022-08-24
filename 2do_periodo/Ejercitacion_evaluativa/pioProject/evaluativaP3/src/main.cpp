@@ -193,3 +193,27 @@ void ejercicio4() {
   };
 };
 
+// 5. Ingresar una secuencia de 8 bits por terminal , que activaran los leds
+// correspondientes por el puerto D.
+
+void ejercicio5() {
+  PORTD = 0b00000000;
+  int pot = 0;
+  Serial.println("Ingrese una secuancia de 8bits en binario para encender los leds correspondientes.");
+  while (Serial.available() == 0) {};
+  String dato = Serial.readString();
+  Serial.print("La secuencia introducida es: ");
+  Serial.println(dato);
+  int dato_len = dato.length() + 1; 
+  char dato_array[dato_len];
+  dato.toCharArray(dato_array, dato_len); 
+  for (int i = 0; i < dato_len -1; i++) {
+    pot = dato_array[i];
+    if (pot == 49) {
+      pot = 255;}
+    else { pot = 0;};
+    
+    digitalWrite(i,pot);
+    delay(100);
+  }
+};
