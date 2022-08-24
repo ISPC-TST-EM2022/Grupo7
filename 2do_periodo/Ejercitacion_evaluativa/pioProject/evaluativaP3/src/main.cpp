@@ -166,3 +166,30 @@ void ejercicio3() {
   
 };
 
+// 4. Pedir un valor entre 0 y 255, para controlar el brillo de un diodo led.
+
+void ejercicio4() {
+  Serial.println();
+  Serial.print("Por favor, ingrese un numero entre 0 y 255 para controlar el brillo del led: ");
+  while (Serial.available() == 0) {};
+  potencia_led = Serial.parseInt();
+  Serial.println(potencia_led);
+  if ((0 <= potencia_led) && (potencia_led < 63)) {
+    analogWrite(led, potencia_led);
+  } else if ((64 <= potencia_led) && (potencia_led < 76)) {
+    analogWrite(led, potencia_led);
+  } else if ((77 <= potencia_led) && (potencia_led < 127)) {
+    analogWrite(led, potencia_led);
+  } else if ((128 <= potencia_led) && (potencia_led < 178)) {
+    analogWrite(led, potencia_led);
+  } else if ((179 <= potencia_led) && (potencia_led < 191)) {
+    analogWrite(led, potencia_led);
+  } else if ((192 <= potencia_led) && (potencia_led < 229)) {
+    analogWrite(led, potencia_led);
+  } else if ((230 <= potencia_led) && (potencia_led < 256)) {
+    analogWrite(led, potencia_led);
+  } else {
+    Serial.println("Ingrese un valor entre 0 y 255.");
+  };
+};
+
