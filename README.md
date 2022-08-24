@@ -4,7 +4,7 @@ Grupo para la practica anual de la materia Electronica Microcontrolada
 # Participantes:  
 - [Otero, Carlos Nahuel.](https://github.com/NahuelOtero)
 - [Gustavo Alberto Godoy.](https://github.com/chulkx) 
-- [Mulka, Sharon Micaela.](https://github.com/sharonmulka)
+- [Maldonado, Dario.](https://github.com/Darman82)
 - [Ruiz, Gloria Beatriz.](https://github.com/ruizgb)
  
 
