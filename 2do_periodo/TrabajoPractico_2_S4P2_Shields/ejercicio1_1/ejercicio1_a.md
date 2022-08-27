@@ -10,11 +10,11 @@ El bus I2C, un estándar que facilita la comunicación entre microcontroladores,
 
 La metodología de comunicación de datos del bus I2C es en serie y sincrónica. Una de las señales del bus marca el tiempo (pulsos de reloj) y la otra se utiliza para intercambiar datos.
 
-<center>
+<p align='center'>
 
-![Image text](.\img_ej1\I2C_1.png)
+<img src="./img_ej1/I2C_1.png">
 
-</center>
+</p>
 
 # <span style="color:#a16fbf">Descripción de las señales</span>
 
@@ -22,13 +22,14 @@ La metodología de comunicación de datos del bus I2C es en serie y sincrónica.
 - SDA (System Data) es la línea por la que se mueven los datos entre los dispositivos.
 - GND (Masa) común de la interconexión entre todos los dispositivos «enganchados» al bus.
 
-Las líneas SDA y SCL son del tipo drenaje abierto, es decir, un estado similar al de colector abierto, pero asociadas a un transistor de efecto de campo (o FET). Se deben polarizar en estado alto (conectando a la alimentación por medio de resistores «pull-up») lo que define una estructura de bus que permite conectar en paralelo múltiples entradas y salidas.
+Las líneas SDA y SCL son del tipo drenaje abierto, es decir, un estado similar al de colector abierto, pero asociadas a un transistor de efecto de campo (o FET). Se deben polarizar en estado alto (conectando a la alimentación por medio de resistores «pull-up») lo que define una estructura de bus que permite conectar en paralelo múltiples entradas y salidas.  
 
-<center>
 
-![Image text](.\img_ej1\Comunicacion_busI2Cblk.png)
+<p align='center'>  
 
-</center>
+<img src="./img_ej1/Comunicacion_busI2Cblk.png">
+
+</p>  
 
 Las dos líneas del bus están en un nivel lógico alto cuando están inactivas. En principio, el número de dispositivos que se puede conectar al bus no tiene límites, aunque hay que observar que la capacidad máxima sumada de todos los dispositivos no supere los 400 pF. El valor de los resistores de polarización no es muy crítico, y puede ir desde 1K8 (1.800 ohms) a 47K (47.000 ohms). Un valor menor de resistencia incrementa el consumo de los integrados pero disminuye la sensibilidad al ruido y mejora el tiempo de los flancos de subida y bajada de las señales. Los valores más comunes en uso son entre 1K8 y 10K.
 
@@ -37,11 +38,12 @@ Las dos líneas del bus están en un nivel lógico alto cuando están inactivas.
 
 Habiendo varios dispositivos conectados sobre el bus, es lógico que para establecer una comunicación a través de él se deba respetar un protocolo. Digamos, en primer lugar, lo más importante: existen dispositivos maestros y dispositivos esclavos. Sólo los dispositivos maestros pueden iniciar una comunicación.
 
-<center>
 
-![Image text](.\img_ej1\i2c_3.png)
+<p align='center' style=' padding-top: 10px;'>  
 
-</center>
+<img align='left' style='padding-right: 12px;' src="./img_ej1/i2c_3.png">
+
+</p> 
 
 La condición inicial, de bus libre, es cuando ambas señales están en estado lógico alto. En este estado cualquier dispositivo maestro puede ocuparlo, estableciendo la condición de inicio (start). Esta condición se presenta cuando un dispositivo maestro pone en estado bajo la línea de datos (SDA), pero dejando en alto la línea de reloj (SCL).
 
@@ -49,19 +51,20 @@ El primer byte que se transmite luego de la condición de inicio contiene siete 
 
 Si el dispositivo cuya dirección corresponde a la que se indica en los siete bits (A0-A6) está presente en el bus, éste contesta con un bit en bajo, ubicado inmediatamente luego del octavo bit que ha enviado el dispositivo maestro. Este bit de reconocimiento (ACK) en bajo le indica al dispositivo maestro que el esclavo reconoce la solicitud y está en condiciones de comunicarse. Aquí la comunicación se establece en firme y comienza el intercambio de información entre los dispositivos.
 
-<center>
+<p align='center' style=' padding-top: 10px;'> 
 
-![Image text](.\img_ej1\i2c_4.png)
+<img align='left' style='padding-right: 12px;' src="./img_ej1/i2c_4.png">
 
-</center>
+</p> 
+
 
 Si el bit de lectura/escritura (R/W) fue puesto en esta comunicación a nivel lógico bajo (escritura), el dispositivo maestro envía datos al dispositivo esclavo. Esto se mantiene mientras continúe recibiendo señales de reconocimiento, y el contacto concluye cuando se hayan transmitido todos los datos.
 
-<center>
+<p align='center' style=' padding-top: 10px;'> 
 
-![Image text](.\img_ej1\i2c_5.png)
+<img align='left' style='padding-right: 12px;' src="./img_ej1/i2c_5.png">
 
-</center>
+</p> 
 
 En el caso contrario, cuando el bit de lectura/escritura estaba a nivel lógico alto (lectura), el dispositivo maestro genera pulsos de reloj para que el dispositivo esclavo pueda enviar los datos. Luego de cada byte recibido el dispositivo maestro (quien está recibiendo los datos) genera un pulso de reconocimiento.
 
@@ -141,11 +144,14 @@ Volviendo al ejemplo del módulo de brújula CMPS03, veamos cómo se lee el regi
 4. Enviar una secuencia de inicio (inicio reiterado)
 5. Enviar 0xC1 (La dirección de dispositivo del CMPS03 con el bit de lectura/escritura en alto)
 6. Leer un byte de dato desde el CMPS03
-7. Enviar la secuencia de parada
+7. Enviar la secuencia de parada  
 
-<center>
 
-![Image text](.\img_ej1\i2c_6.png)
+<p align='center' style=' padding-top: 10px;'> 
 
-</center>
+<img align='center' style='padding-right: 12px;' src="./img_ej1/i2c_6.png">
 
+</p> 
+
+
+*Fuente: https://robots-argentina.com.ar*
