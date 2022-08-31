@@ -7,7 +7,7 @@ Grupo para la practica anual de la materia Electronica Microcontrolada
 - [Maldonado, Dario.](https://github.com/Darman82)
 - [Ruiz, Gloria Beatriz.](https://github.com/ruizgb)
 - [LEYTON SEGOVIA, Alejandro Antonio.](https://github.com/Leytonale)
- 
+- [LEYTON SEGOVIA, William Bernardo.](https://github.com/wleyton89)
 
   
   ## Organización del repositorio.  
