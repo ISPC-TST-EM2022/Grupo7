@@ -1,0 +1,1 @@
+A ) En la carpeta de Material Aulico, deberan colocar los documentos (PDF, PPT, Otros) que el grupo utilizara para hacer la exposicion explicando su desarrollo. 
