@@ -1,1 +1,2 @@
-C ) En esta carpeta colocaran el material bibliografico que les seria util para futuras modificaciones o actualizaciones al proyecto.
+# Robot-Arm-Car
+This repository contains code and diagram for Robot Arm Car with PS3 Controller and esp32
