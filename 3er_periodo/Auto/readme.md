@@ -1,15 +1,19 @@
-En esta primera etapa, cada grupo debe crear en el monorepositorio una carpeta llamada como el proyecto {"Auto", "Impresora 3D", "Drone"}. La misma debe contener las siguientes subcarpetas. 
 
---A. Material Aulico  
---B. Bibliografia  
---C. Ampliacion  
---D. Proyecto  
- 
-Donde los detalles de cada carpeta son los siguientes:
+![Image text](https://github.com/ISPC-TST-Electronica-Microcontrolada/Grupo7/blob/main/teleco.png)
+# Grupo7
 
-A ) En la carpeta de Material Aulico, deberan colocar los documentos (PDF, PPT, Otros) que el grupo utilizara para hacer la exposicion explicando su desarrollo.   
-B ) En esta carpeta colocaran el material bibliografico que utilizaron de soporte.   
-C ) En esta carpeta colocaran el material bibliografico que les seria util para futuras modificaciones o actualizaciones al proyecto.  
-D ) En esta carpeta ira la implementacion del proyecto, con las ramas de HARD y SOFT del desarrollo, donde se plasmara los esquemas electronicos utilizados (simulados o no) y el firmware desarrollado para el prototipo. Pueden utilizar las carpetas auxiliares que consideren necesarias, como ser .SHIELD , . GitIgnore, etc.   
+Proyecto AG7-W
 
-La 1ra Etapa es de gestacion del proyecto, es decir de la organizacion del mismo, segun se vio en las metodologias presentadas por el profesor Jorge Morales. El plazo termina el Sabado 10 de Septiembre a las 23:59, el dia Lunes 12 de Septiembre un grupo al azar hara la presentacion de su proyecto, con un plazo de 30 minutos, por cuestion de tiempo los demas grupos deberan presentar 1 video de presentacion y organizacion del proyecto de no mas de 30 minutos en formato mp4 donde participen todos los integrantes. 
+El proyecto se basa en la creación de un vehículo autocontrolado que permiita recorrer una huerta y tomar los datos de la humedad del suelo en donde se desee.
+
+Para lograrlo se adquirió un kit de auto 4wd y se modificó para que cumpla con los requerimientos planteados al iniciar el proyecto.  
+
+<picture>  
+  <img alt="Shows an illustrated sun in light color mode and a moon with stars in dark color mode." src="https://github.com/ISPC-TST-Electronica-Microcontrolada/Grupo7/blob/main/3er_periodo/Auto/imagenes/IMG_0698.JPG">
+</picture>
+<picture>
+<img alt="Shows an illustrated sun in light color mode and a moon with stars in dark color mode." src="https://github.com/ISPC-TST-Electronica-Microcontrolada/Grupo7/blob/main/3er_periodo/Auto/imagenes/IMG_0700.JPG">
+</picture>  
+<picture>  
+  <img alt="Shows an illustrated sun in light color mode and a moon with stars in dark color mode." src="https://github.com/ISPC-TST-Electronica-Microcontrolada/Grupo7/blob/main/3er_periodo/Auto/imagenes/IMG_0699.JPG">
+</picture>
