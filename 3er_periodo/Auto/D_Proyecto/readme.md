@@ -1,1 +1,4 @@
-D ) En esta carpeta ira la implementacion del proyecto, con las ramas de HARD y SOFT del desarrollo, donde se plasmara los esquemas electronicos utilizados (simulados o no) y el firmware desarrollado para el prototipo. Pueden utilizar las carpetas auxiliares que consideren necesarias, como ser .SHIELD , . GitIgnore, etc.
+# AG7-W  
+## Diagrama de conexiones.
+
+![](https://github.com/ISPC-TST-Electronica-Microcontrolada/Grupo7/blob/main/3er_periodo/Auto/D_Proyecto/imagenes/autoAG7-W.png)
