@@ -1,6 +1,6 @@
 # AG7-W  
 
-En los siguientes enlaces podran algunas muestras en video del trabajo realizado. En particular se muestra el vehiculo funcionando y la conexion exitosa a la base de datos online.
+En los siguientes enlaces podrán ver algunas muestras en video del trabajo realizado. En particular se muestra el vehiculo funcionando y la conexión exitosa a la base de datos online.
 
 https://youtu.be/LPGO2pQHvcI  video vehículo funcionando.
 
